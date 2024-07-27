@@ -1,0 +1,1 @@
+scp /home/hong/ti-sdk-am335x-evm-06.00.00.00/board-support/linux-3.2.0-psp04.06.00.11/arch/arm/boot/uImage root@192.168.1.241:~/.

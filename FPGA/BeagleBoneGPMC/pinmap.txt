@@ -1,0 +1,73 @@
+########################################################################
+## reverse pin (connect via Beaglebone LCD cape)
+
+set_location_assignment PIN_90 -to clk_in
+#set_location_assignment PIN_ -to RST_L
+set_location_assignment PIN_101 -to AD[15]
+set_location_assignment PIN_99 -to AD[14]
+set_location_assignment PIN_114 -to AD[13]
+set_location_assignment PIN_113 -to AD[12]
+set_location_assignment PIN_131 -to AD[11]
+set_location_assignment PIN_112 -to AD[10]
+set_location_assignment PIN_120 -to AD[9]
+set_location_assignment PIN_97 -to AD[8]
+set_location_assignment PIN_11 -to ADV_L
+set_location_assignment PIN_14 -to WE_L
+set_location_assignment PIN_12 -to RD_L
+#set_location_assignment PIN_ -to CS_L
+set_location_assignment PIN_127 -to LED[1]
+set_location_assignment PIN_124 -to LED[0]
+set_location_assignment PIN_123 -to SW_TACT[1]
+set_location_assignment PIN_130 -to SW_TACT[0]
+
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_in
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  AD[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  ADV_L
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  WE_L
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to  RD_L
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_TACT[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_TACT[0]
+
+
+
+GPMC_AD15		GPIO12 : PIN_101
+GPMC_AD14		GPIO13 : PIN_99
+GPMC_AD13		GPIO8  : PIN_114
+GPMC_AD12		GPIO9  : PIN_113
+GPMC_AD11		GPIO14 : PIN_131
+GPMC_AD10		GPIO11 : PIN_112
+GPMC_AD9		GPIO10 : PIN_120
+GPMC_AD8		GPIO16 : PIN_97
+GPMC_ADVN_ALE	GPIO4  : PIN_11
+GPMC_WEN		GPIO7  : PIN_14
+GPMC_OEN_REN	GPIO5  : PIN_12
+GPMC_BE0N_CLE	GPIO6  : PIN_13
+GPMC_CLK		GPIO15 : PIN_98
+
+########################################################################
+
+
+########################################################################
+## direct pin (connect at Beaglebone Board)
+
+
+
+
+
+
+
+
+
+########################################################################
+
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+   }
+   element parallel_flash_loader_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M04SCE144C8G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="8" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="flash_addr" internal="parallel_flash_loader_0.flash_addr" />
+ <interface name="flash_data" internal="parallel_flash_loader_0.flash_data" />
+ <interface
+   name="flash_io0"
+   internal="parallel_flash_loader_0.flash_io0"
+   type="conduit"
+   dir="end">
+  <port name="flash_io0" internal="flash_io0" />
+ </interface>
+ <interface
+   name="flash_io1"
+   internal="parallel_flash_loader_0.flash_io1"
+   type="conduit"
+   dir="end">
+  <port name="flash_io1" internal="flash_io1" />
+ </interface>
+ <interface
+   name="flash_io2"
+   internal="parallel_flash_loader_0.flash_io2"
+   type="conduit"
+   dir="end">
+  <port name="flash_io2" internal="flash_io2" />
+ </interface>
+ <interface
+   name="flash_io3"
+   internal="parallel_flash_loader_0.flash_io3"
+   type="conduit"
+   dir="end">
+  <port name="flash_io3" internal="flash_io3" />
+ </interface>
+ <interface name="flash_nce" internal="parallel_flash_loader_0.flash_nce" />
+ <interface
+   name="flash_ncs"
+   internal="parallel_flash_loader_0.flash_ncs"
+   type="conduit"
+   dir="end">
+  <port name="flash_ncs" internal="flash_ncs" />
+ </interface>
+ <interface name="flash_noe" internal="parallel_flash_loader_0.flash_noe" />
+ <interface name="flash_nwe" internal="parallel_flash_loader_0.flash_nwe" />
+ <interface
+   name="flash_sck"
+   internal="parallel_flash_loader_0.flash_sck"
+   type="conduit"
+   dir="end">
+  <port name="flash_sck" internal="flash_sck" />
+ </interface>
+ <interface
+   name="pfl_flash_access_granted"
+   internal="parallel_flash_loader_0.pfl_flash_access_granted"
+   type="conduit"
+   dir="end">
+  <port name="pfl_flash_access_granted" internal="pfl_flash_access_granted" />
+ </interface>
+ <interface
+   name="pfl_flash_access_request"
+   internal="parallel_flash_loader_0.pfl_flash_access_request"
+   type="conduit"
+   dir="end">
+  <port name="pfl_flash_access_request" internal="pfl_flash_access_request" />
+ </interface>
+ <interface
+   name="pfl_nreset"
+   internal="parallel_flash_loader_0.pfl_nreset"
+   type="conduit"
+   dir="end">
+  <port name="pfl_nreset" internal="pfl_nreset" />
+ </interface>
+ <module
+   name="parallel_flash_loader_0"
+   kind="altera_parallel_flash_loader"
+   version="15.0"
+   enabled="1"
+   autoexport="1">
+  <parameter name="FLASH_ECC_CHECKBOX" value="false" />
+  <parameter name="INTENDED_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="QFLASH_FAST_SPEED" value="false" />
+  <parameter name="TRISTATE_CHECKBOX" value="false" />
+  <parameter name="clock_frequency" value="100.0" />
+  <parameter name="dclk_divisor_combo" value="1" />
+  <parameter name="decompressor_combo" value="None" />
+  <parameter name="disable_crc_check" value="true" />
+  <parameter name="enhanced_flash_programming_combo" value="Area" />
+  <parameter name="fifo_size_combo" value="16" />
+  <parameter name="flash_access_time" value="100" />
+  <parameter name="flash_data_width_combo" value="16 bits" />
+  <parameter name="flash_device_combo" value="CFI 8 Mbit" />
+  <parameter name="flash_nreset_check" value="false" />
+  <parameter name="flash_type_combo" value="Quad SPI Flash" />
+  <parameter name="fpga_conf_scheme_combo" value="PS (passive serial)" />
+  <parameter name="nflash_access_time" value="100" />
+  <parameter name="nflash_data_width_combo" value="8 bits" />
+  <parameter name="nflash_device_combo" value="NAND 512 Mbit" />
+  <parameter name="nflash_mfc_combo" value="Micron(NAND)" />
+  <parameter name="nflash_rb_edit" value="0" />
+  <parameter name="num_flash_combo" value="1" />
+  <parameter name="num_nflash_combo" value="1" />
+  <parameter name="num_qflash_combo" value="1" />
+  <parameter name="operating_mode_combo" value="Flash Programming" />
+  <parameter name="option_bit_address" value="0" />
+  <parameter name="qflash_mfc_combo" value="Micron" />
+  <parameter name="qflash_size_combo" value="EPCQ 16 Mbit" />
+  <parameter name="qspi_size_combo" value="QSPI 32 Mbit" />
+  <parameter name="read_modes_combo" value="Normal Mode" />
+  <parameter name="reconfigure_checkbox" value="false" />
+  <parameter name="rsu_watchdog_checkbox" value="false" />
+  <parameter name="rsu_watchdog_counter_edit" value="100.0" />
+  <parameter name="safe_mode_combo" value="Halt" />
+  <parameter name="safe_mode_revert_edit" value="0" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

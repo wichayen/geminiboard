@@ -1,0 +1,2 @@
+have to solve SDRAM clk to generate from Qsys (by clock bridge)  ???
+or setting PLL clk to shift phase ???
